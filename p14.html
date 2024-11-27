@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Enter a string:");
+        const vowels = "aeiou";
+        let patternFollowed = true;
+        for (let i = 0; i < input.length; i++) {
+            const isVowel = vowels.includes(input[i].toLowerCase());
+            if ((i % 2 === 0 && !isVowel) || (i % 2 === 1 && isVowel)) {
+                patternFollowed = false;
+                break;
+            }
+        }
+        if (patternFollowed) {
+            console.log("Pattern followed");
+        } else {
+            console.log("Pattern broken");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Enter numbers using comma");
+        let arr = input.split(',');
+        let pFollows = true;
+        for(i=0;i<arr.length-1;i++){
+            if((+arr[i]%2 == 0 && +arr[i+1]%2 == 0) || (+arr[i]%2 != 0 && +arr[i+1]%2!=0)){
+                pFollows = false;
+                break;
+            }
+        }
+        if (pFollows){
+            console.log("Pattern followed");
+        } 
+        else {
+            console.log("Pattern broken");
+        }
+    </script>
+</body>
+</html>

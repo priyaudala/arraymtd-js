@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks = +prompt("Enter Marks:");
+        switch (true) {
+            case marks >= 90:
+                grade = "A+";
+                break;
+            case marks >= 80:
+                grade = "A";
+                break;
+            case marks >= 70:
+                grade = "B";
+                break;
+            case marks < 70:
+                grade = "C";
+                break;
+            default:
+                grade = "Enter correct value"
+        }
+        console.log(grade);
+    </script>
+</body>
+</html>

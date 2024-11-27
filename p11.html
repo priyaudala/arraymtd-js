@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let currentDay =+prompt("Enter current day(1-365):");
+        let expiryDay =+prompt("Enter expiry day(1-365):");
+        if(expiryDay < currentDay){
+            console.log("Expired");
+        } 
+        else{
+            console.log("Not Expired");
+        }
+    </script>
+</body>
+</html>

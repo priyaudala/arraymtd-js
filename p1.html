@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalAmount = +prompt("Enter total amount:");
+        if (!(isNaN(totalAmount))) {
+            if (totalAmount >= 500) {
+                totalAmount -= 0.2 * totalAmount
+            }
+            else if (totalAmount > 200 && totalAmount < 500) {
+                totalAmount -= 0.1 * totalAmount;
+            }
+            else {
+                totalAmount = totalAmount;
+            }
+            console.log("TotalAmount after discount:",totalAmount);
+        }
+        else {
+            console.log("Enter value >0");
+        }
+    </script>
+</body>
+</html>

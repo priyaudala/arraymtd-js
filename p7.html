@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salesTarget = +prompt("Enter Sales target:");
+        let Salary = +prompt("Enter monthly salary:");
+        let bonus;
+        if (salesTarget > 120){
+            bonus = 0.20 * Salary; 
+        } 
+        else if (salesTarget >= 100 && salesTarget <= 120){
+            bonus = 0.10 * Salary; 
+        } 
+        else{
+            bonus = 0; 
+        }
+        console.log(bonus);
+    </script>
+</body>
+</html>

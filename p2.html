@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        temp = prompt("Enter temp in degree celsius:");
+        if (!(isNaN(temp))) {
+            if (temp > 40) {
+                console.log("Extreme Hot");
+            }
+            else if (temp >= 20 && temp <= 40) {
+                console.log("Moderate");
+            }
+            else {
+                console.log("Cold")
+            }
+        }
+        else {
+            console.log("Enter digits only")
+        }
+    </script>
+</body>
+</html>

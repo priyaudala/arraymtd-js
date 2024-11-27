@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let latedays = +prompt("latedays=");
+        switch (true) {
+            case latedays >= 1 && latedays <= 5:
+                fine = latedays * 2;
+                break;
+            case latedays >= 6 && latedays <= 10:
+                fine = latedays * 3;
+                break;
+            case latedays > 10:
+                fine = latedays * 5;
+                break;
+            default:
+                fine = "Enter correct value"
+        }
+        console.log(`Fine:$${fine}`)
+    </script>
+</body>
+</html>
